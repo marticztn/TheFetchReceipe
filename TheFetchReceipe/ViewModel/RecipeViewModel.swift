@@ -1,15 +1,16 @@
 import Foundation
 
 enum RecipeServiceError: Error {
-    case invalidURL, malformedData
+    case invalidURL
 }
 
 class RecipeViewModel: ObservableObject {
+    @Published var fetchFailed: Bool = false
     @Published var tapID: UUID?
     @Published var recipes: [String: [Recipe]] = [:]
     
     func fetchRecipes() async throws -> [String: [Recipe]] {
-        guard let url = URL(string: "https://d3jbb8n5wk0qxi.cloudfront.net/recipes-malformed.json") else {
+        guard let url = URL(string: "https://d3jbb8n5wk0qxi.cloudfront.net/recipes.json") else {
             throw RecipeServiceError.invalidURL
         }
         

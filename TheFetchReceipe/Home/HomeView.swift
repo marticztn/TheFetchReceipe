@@ -10,8 +10,8 @@ struct HomeView: View {
             
             Spacer()
             
-            if recipeViewModel.recipes.isEmpty {
-                NoRecipeView()
+            if recipeViewModel.recipes.isEmpty || recipeViewModel.fetchFailed {
+                NoRecipeView(isFailed: $recipeViewModel.fetchFailed)
             } else {
                 RecipeView()
             }
@@ -26,6 +26,7 @@ struct HomeView: View {
             recipeViewModel.recipes = try await recipeViewModel.fetchRecipes()
         } catch {
             print("[ERROR] HomeView - Failed to fetch recipes: \(error.localizedDescription)")
+            recipeViewModel.fetchFailed = true
         }
     }
     

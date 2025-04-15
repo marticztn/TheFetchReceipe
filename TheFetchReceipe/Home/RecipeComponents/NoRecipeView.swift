@@ -2,6 +2,7 @@ import SwiftUI
 
 struct NoRecipeView: View {
     
+    @Binding var isFailed: Bool
     @EnvironmentObject var recipeViewModel: RecipeViewModel
     
     var body: some View {
@@ -15,7 +16,8 @@ struct NoRecipeView: View {
                     }
                 }
             
-            Text("No Recipe Found")
+            Text(isFailed ? "Oops!\nThe data is corrupted\nPlease try again" : "No Recipe Found")
+                .multilineTextAlignment(.center)
                 .font(.system(size: 25))
                 .fontWeight(.bold)
                 .padding(.bottom, 8)
