@@ -8,6 +8,7 @@ struct RecipeCard: View {
     let cardrecipeHeight: CGFloat = 160.0
     let cardRecipeNameFontSize: CGFloat = 13.0
     
+    @State private var isEnlarge: Bool = false
     @EnvironmentObject var recipeViewModel: RecipeViewModel
     
     var body: some View {
@@ -46,6 +47,24 @@ struct RecipeCard: View {
         .frame(width: cardRecipeWidth, height: cardrecipeHeight, alignment: .topLeading)
         .onTapGesture {
             showRecipeOptions()
+        }
+        .sheet(isPresented: $isEnlarge) {
+            CachedAsyncImage(
+                url: URL(string: recipe.photo_url_large ?? ""),
+                placeholder: {
+                    ProgressView()
+                        .scaleEffect(1.3)
+                        .progressViewStyle(.circular)
+                },
+                content: { image in
+                    Image(uiImage: image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .mask(RoundedRectangle(cornerRadius: 15.0))
+                        .shadow(color: .black.opacity(0.3), radius: 5, y: 3)
+                        .padding()
+                }
+            )
         }
     }
     
@@ -93,7 +112,7 @@ struct RecipeCard: View {
     }
     
     private func enlargeCard() {
-        
+        isEnlarge = true
     }
     
     private func openInSafari(url: String?) {
