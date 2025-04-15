@@ -8,6 +8,8 @@ struct HomeView: View {
         VStack(alignment: .leading, spacing: 0) {
             HomeHeader()
             
+            Spacer()
+            
             if recipeViewModel.recipes.isEmpty {
                 NoRecipeView()
             } else {

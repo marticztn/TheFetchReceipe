@@ -4,7 +4,6 @@ enum RecipeServiceError: Error {
     case invalidURL
 }
 
-
 class RecipeViewModel: ObservableObject {
     @Published var tapID: UUID?
     @Published var recipes: [String: [Recipe]] = [:]

@@ -13,5 +13,11 @@ struct RecipeView: View {
             }
             .padding(.top, 20)
         }
+        .transition(.opacity.combined(with: .scale(scale: 0.9)).animation(.spring(bounce: 0.25)))
+        .refreshable {
+            Task {
+                recipeViewModel.recipes = try await recipeViewModel.fetchRecipes()
+            }
+        }
     }
 }
