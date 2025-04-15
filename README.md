@@ -1,5 +1,5 @@
 ### Summary: Include screen shots or a video of your app highlighting its features
-    Sure! Media files are uploaded to the Github!
+    Sure! Media files are uploaded to the Github! (TheFetchRecipe -> Media folder)
 
 ### Focus Areas: What specific areas of the project did you prioritize? Why did you choose to focus on these areas?
     I chose to focus on getting the main feature done first, then the UI. Specifically, the network fetch with aync/await, and the image caching mechanism. I believe these are the most important features for this project, since caching minimizes network usage, improves UX (less loading time), thus it should be prioritized.
