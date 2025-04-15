@@ -12,9 +12,17 @@ struct RecipeCard: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            AsyncImage(url: URL(string: recipe.photo_url_small ?? "")!) { phase in
-                if let image = phase.image {
-                    image
+            CachedAsyncImage(
+                url: URL(string: recipe.photo_url_small ?? ""),
+                placeholder: {
+                    ProgressView()
+                        .scaleEffect(1.3)
+                        .progressViewStyle(.circular)
+                },
+                content: { image in
+                    Image(uiImage: image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
                         .overlay {
                             Rectangle()
                                 .fill(isClickedSelf() ? .black.opacity(0.7) : .clear)
@@ -23,17 +31,8 @@ struct RecipeCard: View {
                                 overlayButtons
                             }
                         }
-                    
-                    // TODO: Cache the downloaded image here...
-                    
-                } else if phase.error != nil {
-                    Image(systemName: "triangle.fill")
-                } else {
-                    ProgressView()
-                        .scaleEffect(1.3)
-                        .progressViewStyle(.circular)
                 }
-            }
+            )
             .frame(width: cardRecipeWidth, height: cardRecipeWidth)
             .mask(RoundedRectangle(cornerRadius: 15.0))
             .shadow(color: .black.opacity(0.3), radius: 5, y: 3)
