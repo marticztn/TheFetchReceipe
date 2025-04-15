@@ -6,7 +6,7 @@ enum RecipeServiceError: Error {
 
 
 class RecipeViewModel: ObservableObject {
-    @Published var tapID: UUID = UUID()
+    @Published var tapID: UUID?
     @Published var recipes: [String: [Recipe]] = [:]
     
     func fetchRecipes() async throws -> [String: [Recipe]] {
