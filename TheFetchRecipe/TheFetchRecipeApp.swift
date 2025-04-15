@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct TheFetchReceipeApp: App {
+struct TheFetchRecipeApp: App {
     
     @StateObject private var recipeViewModel = RecipeViewModel()
     

@@ -22,14 +22,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		969852112DADB73100710F93 /* TheFetchReceipe */ = {
+		969852112DADB73100710F93 /* TheFetchRecipe */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TheFetchReceipe;
+			path = TheFetchRecipe;
 			sourceTree = "<group>";
 		};
-		9698521F2DADB73100710F93 /* TheFetchReceipeTests */ = {
+		9698521F2DADB73100710F93 /* TheFetchRecipeTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TheFetchReceipeTests;
+			path = TheFetchRecipeTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -55,8 +55,8 @@
 		969852062DADB73100710F93 = {
 			isa = PBXGroup;
 			children = (
-				969852112DADB73100710F93 /* TheFetchReceipe */,
-				9698521F2DADB73100710F93 /* TheFetchReceipeTests */,
+				969852112DADB73100710F93 /* TheFetchRecipe */,
+				9698521F2DADB73100710F93 /* TheFetchRecipeTests */,
 				969852102DADB73100710F93 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +86,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				969852112DADB73100710F93 /* TheFetchReceipe */,
+				969852112DADB73100710F93 /* TheFetchRecipe */,
 			);
 			name = TheFetchRecipe;
 			packageProductDependencies = (
@@ -109,7 +109,7 @@
 				9698521E2DADB73100710F93 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				9698521F2DADB73100710F93 /* TheFetchReceipeTests */,
+				9698521F2DADB73100710F93 /* TheFetchRecipeTests */,
 			);
 			name = TheFetchRecipeTests;
 			packageProductDependencies = (
