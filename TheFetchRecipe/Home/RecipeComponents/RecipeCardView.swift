@@ -85,15 +85,17 @@ struct RecipeCard: View {
     }
     
     var sheetContent: some View {
-        VStack(alignment: .leading) {
+        VStack {
             Group {
                 Text(recipe.name)
                     .font(.system(size: 24, weight: .bold))
                 
                 Text(recipe.cuisine)
-                    .font(.system(size: 15, weight: .medium))
+                    .font(.system(size: 17, weight: .medium))
                     .opacity(0.5)
             }
+            .multilineTextAlignment(.leading)
+            .frame(maxWidth: .infinity)
             .padding(.horizontal, AppConfigs.defaultPadding)
             
             CachedAsyncImage(
@@ -110,9 +112,11 @@ struct RecipeCard: View {
                         .mask(RoundedRectangle(cornerRadius: 15.0))
                         .shadow(color: .black.opacity(0.3), radius: 5, y: 3)
                         .padding()
+                        .transition(.opacity.combined(with: .scale(scale: 0.8)).animation(.spring(bounce: 0.25)))
                 }
             )
         }
+        .animation(.spring(bounce: 0.25))
     }
     
     // MARK: - Private functions
