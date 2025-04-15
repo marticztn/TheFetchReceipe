@@ -49,22 +49,7 @@ struct RecipeCard: View {
             showRecipeOptions()
         }
         .sheet(isPresented: $isEnlarge) {
-            CachedAsyncImage(
-                url: URL(string: recipe.photo_url_large ?? ""),
-                placeholder: {
-                    ProgressView()
-                        .scaleEffect(1.3)
-                        .progressViewStyle(.circular)
-                },
-                content: { image in
-                    Image(uiImage: image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .mask(RoundedRectangle(cornerRadius: 15.0))
-                        .shadow(color: .black.opacity(0.3), radius: 5, y: 3)
-                        .padding()
-                }
-            )
+            sheetContent
         }
     }
     
@@ -97,6 +82,37 @@ struct RecipeCard: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .font(.system(size: 20, weight: .bold))
         .foregroundStyle(.regularMaterial)
+    }
+    
+    var sheetContent: some View {
+        VStack(alignment: .leading) {
+            Group {
+                Text(recipe.name)
+                    .font(.system(size: 24, weight: .bold))
+                
+                Text(recipe.cuisine)
+                    .font(.system(size: 15, weight: .medium))
+                    .opacity(0.5)
+            }
+            .padding(.horizontal, AppConfigs.defaultPadding)
+            
+            CachedAsyncImage(
+                url: URL(string: recipe.photo_url_large ?? ""),
+                placeholder: {
+                    ProgressView()
+                        .scaleEffect(1.3)
+                        .progressViewStyle(.circular)
+                },
+                content: { image in
+                    Image(uiImage: image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .mask(RoundedRectangle(cornerRadius: 15.0))
+                        .shadow(color: .black.opacity(0.3), radius: 5, y: 3)
+                        .padding()
+                }
+            )
+        }
     }
     
     // MARK: - Private functions

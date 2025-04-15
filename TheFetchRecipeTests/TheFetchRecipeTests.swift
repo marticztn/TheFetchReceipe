@@ -122,4 +122,29 @@ final class TheFetchRecipeTests: XCTestCase {
         XCTAssertEqual(groupedRecipes["Indian"]?.count, 2, "Indian cuisine should have 2 recipes")
         XCTAssertEqual(groupedRecipes["Italian"]?.count, 1, "Italian cuisine should have 1 recipe")
     }
+
+    // Test fetching and decoding for the malformed endpoint
+    func testMalformedDataEndpoint() async throws {
+        let url = URL(string: "https://d3jbb8n5wk0qxi.cloudfront.net/recipes-malformed.json")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        do {
+            let _ = try JSONDecoder().decode(RecipeArray.self, from: data)
+            XCTFail("Decoding should have failed for malformed data")
+        } catch {
+            // This is expected since malformed data should cause decoding to fail
+        }
+    }
+    
+    // Test fetching and decoding for the empty endpoint
+    func testEmptyDataEndpoint() async throws {
+        let url = URL(string: "https://d3jbb8n5wk0qxi.cloudfront.net/recipes-empty.json")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        do {
+            let recipeArray = try JSONDecoder().decode(RecipeArray.self, from: data)
+            XCTAssertEqual(recipeArray.recipes.count, 0, "Recipes array should be empty")
+        } catch {
+            XCTFail("Decoding should have succeeded for empty recipes JSON")
+        }
+    }
+    
 }
