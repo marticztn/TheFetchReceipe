@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "appicon.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -12,6 +13,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "ChatGPT Image Apr 15, 2025, 12_07_07 AM.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"

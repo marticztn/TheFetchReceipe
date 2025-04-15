@@ -3,6 +3,10 @@ import SwiftUI
 struct HomeHeader: View {
     var body: some View {
         HStack(spacing: 0) {
+            Image("appicon")
+                .resizable()
+                .frame(width: 50, height: 50)
+                
             Text("The")
             Text("Fetch")
                 .foregroundStyle(Color(red: 241/255, green: 163/255, blue: 58/255))

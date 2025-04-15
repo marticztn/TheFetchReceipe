@@ -18,7 +18,6 @@ struct RecipeCard: View {
                         .overlay {
                             Rectangle()
                                 .fill(isClickedSelf() ? .black.opacity(0.7) : .clear)
-                                .transition(.opacity)
                             
                             if isClickedSelf() {
                                 overlayButtons
@@ -31,6 +30,7 @@ struct RecipeCard: View {
                     Image(systemName: "triangle.fill")
                 } else {
                     ProgressView()
+                        .scaleEffect(1.3)
                         .progressViewStyle(.circular)
                 }
             }
@@ -64,14 +64,14 @@ struct RecipeCard: View {
             if recipe.source_url != nil {
                 Image(systemName: "network")
                     .onTapGesture {
-                        goToRecipeDoc()
+                        openInSafari(url: recipe.source_url)
                     }
             }
             
             if recipe.youtube_url != nil {
                 Image(systemName: "play.rectangle.fill")
                     .onTapGesture {
-                        goToRecipeVideo()
+                        openInSafari(url: recipe.youtube_url)
                     }
             }
         }
@@ -97,13 +97,9 @@ struct RecipeCard: View {
         
     }
     
-    private func goToRecipeDoc() {
-        
-    }
-    
-    private func goToRecipeVideo() {
-        guard let youtubeUrlString = recipe.youtube_url,
-              let url = URL(string: youtubeUrlString),
+    private func openInSafari(url: String?) {
+        guard let sourceUrlString = url,
+              let url = URL(string: sourceUrlString),
               UIApplication.shared.canOpenURL(url) else {
             return
         }
