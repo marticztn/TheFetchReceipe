@@ -5,14 +5,15 @@ struct HomeView: View {
     @EnvironmentObject var recipeViewModel: RecipeViewModel
     
     var body: some View {
-        ZStack {
+        VStack(alignment: .leading, spacing: 0) {
+            HomeHeader()
+            
             if recipeViewModel.recipes.isEmpty {
                 NoRecipeView()
             } else {
-                RecipeList()
+                RecipeView()
             }
         }
-        .padding()
         .task {
             await loadRecipes()
         }
