@@ -11,7 +11,7 @@ struct RecipeView: View {
                     RecipeTypeRowView(type: recipes.key, recipes: recipes.value)
                 }
             }
-            .padding(.top, 20)
+            .padding(.top, 15)
         }
         .transition(.opacity.combined(with: .scale(scale: 0.9)).animation(.spring(bounce: 0.25)))
         .refreshable {
