@@ -1,10 +1,3 @@
-//
-//  TheFetchReceipeTests.swift
-//  TheFetchReceipeTests
-//
-//  Created by Martic Ztn on 4/14/25.
-//
-
 import Testing
 @testable import TheFetchReceipe
 

@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9698520F2DADB73100710F93 /* TheFetchReceipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheFetchReceipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9698521C2DADB73100710F93 /* TheFetchReceipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheFetchReceipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		969852262DADB73100710F93 /* TheFetchReceipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheFetchReceipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9698520F2DADB73100710F93 /* TheFetchRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheFetchRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9698521C2DADB73100710F93 /* TheFetchRecipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheFetchRecipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		969852262DADB73100710F93 /* TheFetchRecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheFetchRecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -85,9 +85,9 @@
 		969852102DADB73100710F93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9698520F2DADB73100710F93 /* TheFetchReceipe.app */,
-				9698521C2DADB73100710F93 /* TheFetchReceipeTests.xctest */,
-				969852262DADB73100710F93 /* TheFetchReceipeUITests.xctest */,
+				9698520F2DADB73100710F93 /* TheFetchRecipe.app */,
+				9698521C2DADB73100710F93 /* TheFetchRecipeTests.xctest */,
+				969852262DADB73100710F93 /* TheFetchRecipeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9698520E2DADB73100710F93 /* TheFetchReceipe */ = {
+		9698520E2DADB73100710F93 /* TheFetchRecipe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 969852302DADB73100710F93 /* Build configuration list for PBXNativeTarget "TheFetchReceipe" */;
+			buildConfigurationList = 969852302DADB73100710F93 /* Build configuration list for PBXNativeTarget "TheFetchRecipe" */;
 			buildPhases = (
 				9698520B2DADB73100710F93 /* Sources */,
 				9698520C2DADB73100710F93 /* Frameworks */,
@@ -110,16 +110,16 @@
 			fileSystemSynchronizedGroups = (
 				969852112DADB73100710F93 /* TheFetchReceipe */,
 			);
-			name = TheFetchReceipe;
+			name = TheFetchRecipe;
 			packageProductDependencies = (
 			);
 			productName = TheFetchReceipe;
-			productReference = 9698520F2DADB73100710F93 /* TheFetchReceipe.app */;
+			productReference = 9698520F2DADB73100710F93 /* TheFetchRecipe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9698521B2DADB73100710F93 /* TheFetchReceipeTests */ = {
+		9698521B2DADB73100710F93 /* TheFetchRecipeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 969852332DADB73100710F93 /* Build configuration list for PBXNativeTarget "TheFetchReceipeTests" */;
+			buildConfigurationList = 969852332DADB73100710F93 /* Build configuration list for PBXNativeTarget "TheFetchRecipeTests" */;
 			buildPhases = (
 				969852182DADB73100710F93 /* Sources */,
 				969852192DADB73100710F93 /* Frameworks */,
@@ -133,16 +133,16 @@
 			fileSystemSynchronizedGroups = (
 				9698521F2DADB73100710F93 /* TheFetchReceipeTests */,
 			);
-			name = TheFetchReceipeTests;
+			name = TheFetchRecipeTests;
 			packageProductDependencies = (
 			);
 			productName = TheFetchReceipeTests;
-			productReference = 9698521C2DADB73100710F93 /* TheFetchReceipeTests.xctest */;
+			productReference = 9698521C2DADB73100710F93 /* TheFetchRecipeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		969852252DADB73100710F93 /* TheFetchReceipeUITests */ = {
+		969852252DADB73100710F93 /* TheFetchRecipeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 969852362DADB73100710F93 /* Build configuration list for PBXNativeTarget "TheFetchReceipeUITests" */;
+			buildConfigurationList = 969852362DADB73100710F93 /* Build configuration list for PBXNativeTarget "TheFetchRecipeUITests" */;
 			buildPhases = (
 				969852222DADB73100710F93 /* Sources */,
 				969852232DADB73100710F93 /* Frameworks */,
@@ -156,11 +156,11 @@
 			fileSystemSynchronizedGroups = (
 				969852292DADB73100710F93 /* TheFetchReceipeUITests */,
 			);
-			name = TheFetchReceipeUITests;
+			name = TheFetchRecipeUITests;
 			packageProductDependencies = (
 			);
 			productName = TheFetchReceipeUITests;
-			productReference = 969852262DADB73100710F93 /* TheFetchReceipeUITests.xctest */;
+			productReference = 969852262DADB73100710F93 /* TheFetchRecipeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9698520A2DADB73100710F93 /* Build configuration list for PBXProject "TheFetchReceipe" */;
+			buildConfigurationList = 9698520A2DADB73100710F93 /* Build configuration list for PBXProject "TheFetchRecipe" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9698520E2DADB73100710F93 /* TheFetchReceipe */,
-				9698521B2DADB73100710F93 /* TheFetchReceipeTests */,
-				969852252DADB73100710F93 /* TheFetchReceipeUITests */,
+				9698520E2DADB73100710F93 /* TheFetchRecipe */,
+				9698521B2DADB73100710F93 /* TheFetchRecipeTests */,
+				969852252DADB73100710F93 /* TheFetchRecipeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		9698521E2DADB73100710F93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9698520E2DADB73100710F93 /* TheFetchReceipe */;
+			target = 9698520E2DADB73100710F93 /* TheFetchRecipe */;
 			targetProxy = 9698521D2DADB73100710F93 /* PBXContainerItemProxy */;
 		};
 		969852282DADB73100710F93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9698520E2DADB73100710F93 /* TheFetchReceipe */;
+			target = 9698520E2DADB73100710F93 /* TheFetchRecipe */;
 			targetProxy = 969852272DADB73100710F93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -405,6 +405,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,9 +413,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fetch.TheFetchReceipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -433,6 +438,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,9 +446,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fetch.TheFetchReceipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -454,14 +464,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6TH86S42D2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fetch.TheFetchReceipeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheFetchReceipe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TheFetchReceipe";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheFetchRecipe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TheFetchRecipe";
 			};
 			name = Debug;
 		};
@@ -473,14 +487,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6TH86S42D2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fetch.TheFetchReceipeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheFetchReceipe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TheFetchReceipe";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheFetchRecipe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TheFetchRecipe";
 			};
 			name = Release;
 		};
@@ -491,12 +509,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6TH86S42D2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fetch.TheFetchReceipeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = TheFetchReceipe;
 			};
 			name = Debug;
@@ -508,12 +531,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6TH86S42D2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fetch.TheFetchReceipeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = TheFetchReceipe;
 			};
 			name = Release;
@@ -521,7 +549,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9698520A2DADB73100710F93 /* Build configuration list for PBXProject "TheFetchReceipe" */ = {
+		9698520A2DADB73100710F93 /* Build configuration list for PBXProject "TheFetchRecipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9698522E2DADB73100710F93 /* Debug */,
@@ -530,7 +558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		969852302DADB73100710F93 /* Build configuration list for PBXNativeTarget "TheFetchReceipe" */ = {
+		969852302DADB73100710F93 /* Build configuration list for PBXNativeTarget "TheFetchRecipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				969852312DADB73100710F93 /* Debug */,
@@ -539,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		969852332DADB73100710F93 /* Build configuration list for PBXNativeTarget "TheFetchReceipeTests" */ = {
+		969852332DADB73100710F93 /* Build configuration list for PBXNativeTarget "TheFetchRecipeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				969852342DADB73100710F93 /* Debug */,
@@ -548,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		969852362DADB73100710F93 /* Build configuration list for PBXNativeTarget "TheFetchReceipeUITests" */ = {
+		969852362DADB73100710F93 /* Build configuration list for PBXNativeTarget "TheFetchRecipeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				969852372DADB73100710F93 /* Debug */,

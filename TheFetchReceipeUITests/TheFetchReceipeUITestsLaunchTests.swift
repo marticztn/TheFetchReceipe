@@ -1,10 +1,3 @@
-//
-//  TheFetchReceipeUITestsLaunchTests.swift
-//  TheFetchReceipeUITests
-//
-//  Created by Martic Ztn on 4/14/25.
-//
-
 import XCTest
 
 final class TheFetchReceipeUITestsLaunchTests: XCTestCase {
